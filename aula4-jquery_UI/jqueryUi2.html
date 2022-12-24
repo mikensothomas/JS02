@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+
+    <tittle>jQuery UI</tittle>
+
+    <link rel="stylesheet" href="jquery-ui.css">
+
+    <script src="jquery.js"></script>
+
+    <script src="jquery-ui.js"></script>
+
+    <script>
+
+    $( function() {
+
+     $("#menu1").menu();
+
+     $("#dialogo1").dialog({
+
+      autoOpen: false,
+
+      show: { effect: "blind", duration: 1000
+
+      },
+
+      hide: { effect: "explode", duration: 1000
+
+      }
+
+      });
+
+      $("#estacio").click(function(){
+
+      location.href="//www.estacio.br";
+
+      });
+
+      $("#harvard").click(function(){
+
+      location.href="//www.harvard.com/";
+
+      });
+
+      $("#abreDialogo").click(function() {
+
+      $("#dialogo1").dialog("open");
+
+      });
+
+     });
+
+    </script>
+
+    <style>
+
+      .ui-menu { width: 150px; }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <ul id="menu1">
+
+    <li><div id="estacio">Estacio</div></li>
+
+    <li><div id="harvard">Harvard</div></li>
+
+    <li><div>Exemplos</div>
+
+      <ul></ul>
+
+      <li><div id="abreDialogo">Diálogo</div></li></li>
+
+      <li><div>Nada Definido</div></li>
+
+      </ul>
+
+    </li>
+
+    <li class="ui-state-disabled"><div>Desabilitado</div></li>
+
+    </ul>
+
+    <div id="dialogo1" title="Diálogo Simples"></div>
+
+    <p>Apenas uma caixa de diálogo que permite arraste e pode ser fechada clicando no "X"</p>
+
+    </div>
+
+  </body>
+
+</html>

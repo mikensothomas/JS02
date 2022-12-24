@@ -1,0 +1,13 @@
+<!DOCTYPE colaborador[
+
+<!ELEMENT colaborador(nome, matricula)>
+
+<!ELEMENT nome (#PCDATA)>
+
+<!ELEMENT matricula (#PCDATA)>
+
+<!ATTLIST matricula uf CDATA #REQUIRED>
+
+]>
+<!--Note que são definidos elementos com o uso de ELEMENT e atributos com o uso de ATTLIST.-->
+

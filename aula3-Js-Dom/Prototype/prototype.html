@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prototype JS</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var nacionalidade = "";
+		var nomeCompleto = "";
+		
+		function Pessoa(nome, sobrenome){
+			this.nome = nome;
+			this.sobrenome = sobrenome;
+			
+		}
+
+		Pessoa.prototype.nacionalidade = "Brasileiro(a)";
+
+		Pessoa.prototype.nomeCompleto = function(){
+			return this.nome + " " +this.sobrenome;
+		}
+
+
+	</script>
+</body>
+</html>

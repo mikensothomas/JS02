@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções em JS</title>
+</head>
+<body>
+   <!-- Início JS -->
+   <script language="javascript">
+
+   		/*Definição de variáveis */
+   		var a, b;
+
+   		/*Declarando uma função em JS*/
+   		function meuProcesso(){
+   			/*Entrada de dados convertendo para número, calculando e atribuindo o valor em b */
+   			a = eval(prompt("Informe um valor: "));
+   			b = a * 5;
+
+ 			document.write("<br/>" + a + " * 5 = " +b); // Saída de dados na tela do browser concatenado
+   		}
+
+   		/*Faz o teste de condição por loop e chama a função meuProcesso() a cada teste.*/
+   		meuProcesso()  
+   		z = 3; 
+   		while(z>0){
+   			meuProcesso();
+   			z--; // tira -1 a cada passagem do loop
+   		}
+
+   		/* teste de condição confirmando se deseja continuar, caso clique ok quer dizer true , chama mais uma e finaliza o processo*/
+   		if(confirm("Mais uma vez? ")){
+   			meuProcesso()
+   		}
+
+   </script>
+   <!-- fim do JS -->
+</body>
+</html>

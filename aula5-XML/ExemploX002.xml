@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf8"?>
+
+<comando>
+
+  <!-- Estrutura de Decisão -->
+
+  <nome>if</nome>
+
+  <exemplo>
+
+  <![CDATA[
+
+  if(a<b)
+
+    maior = b;
+
+  else
+
+    maior = a;
+
+  ]]>
+
+</exemplo>
+
+</comando>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POO em JS</title>
+</head>
+<body>
+   <script type="text/javascript">
+   	
+   		function Pessoa(nome, idade){
+   			this.nome = nome;
+   			this.idade = idade;
+   			this.exibir = function(){
+   				alert(this.nome + " tem " + this.idade +  " ano(s)");
+   			}
+   		}
+
+   		var p1  = new Pessoa("João" , 72);
+   		var p2  = new Pessoa("Cida", 60);
+
+   </script>
+
+   <button onclick="p1.exibir()">Person 1</button>
+   <button onclick="p2.exibir()">Person 2</button>
+
+</body>
+</html>

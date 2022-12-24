@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+</head>
+<body>
+
+ 	<script>
+
+ 	var elemento_pai = document.body;
+	var titulo = document.createElement('h1');
+
+//Criar nó de texto para o elemento filho
+
+	var texto = document.createTextNode("Um título qualquer na página");
+
+
+//
+// Inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
+//
+	 titulo.appendChild(texto);
+     elemento_pai.appendChild(titulo);
+ 	</script>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos</title>
+</head>
+<body>
+
+	<button id="Teste1" onclick="mostraMensagem()">Clique em mim</button>
+
+	<script>
+
+		function mostraMensagem(){
+			alert("Clicou!!! Olá Mundo Novo");
+		}
+
+		var obj = querySelector("#Teste1");
+		obj.addEventListener("click", mostraMensagem);
+		
+	</script>
+</body>
+</html>

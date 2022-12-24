@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<?xml-stylesheet type="text/css" href="turma.css"?>
+
+<turma codigo="1001">
+
+  <professor>Tom Sawyer</professor>
+
+  <alunos>
+
+    <aluno matricula="1968001">Gleedy Lee</aluno>
+
+    <aluno matricula="1968001">Gleedy Lee</aluno>
+
+    <aluno matricula="1968001">Gleedy Lee</aluno>
+
+  </alunos>
+
+</turma>
+
+<!--Sem o uso de CDATA nesse exemplo, ocorreria um erro, pois o parser entenderia que existe uma tag iniciada com b e que não foi fechada, isso devido à presença do if com a condição a<b. -->
